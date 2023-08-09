@@ -18,7 +18,7 @@ function HighlightedText() {
 				boldLength = 1;
 			}
 
-			const hyphenIndex = word.indexOf('-');
+		           const hyphenIndex = word.indexOf('-');
 
 			if (hyphenIndex !== -1) {
 				const firstWord = word.slice(0, hyphenIndex);
@@ -47,7 +47,7 @@ function HighlightedText() {
 
 				return (
 					<React.Fragment key={index}>
-						<b>{boldPart}</b>
+						<b className='emphasisedText'>{boldPart}</b>
 						{restPart}
 						{hyphen}
 					</React.Fragment>
