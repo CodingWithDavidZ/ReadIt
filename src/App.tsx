@@ -4,7 +4,8 @@ import HighlightedText from './components/HighlightedText'
 
 function App() {
   const [prefrences, setPrefrences] = useState({
-    text: '',
+    endOfWordTextColor: '',
+    emphasisedTextColor: '',
     color: '',
     fontSize: '',
     fontWeight: '',
