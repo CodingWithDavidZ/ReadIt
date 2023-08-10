@@ -32,11 +32,11 @@ function HighlightedText() {
 
 				return (
 					<React.Fragment key={index}>
-						<b>{boldPartFirst}</b>
+						<text className='emphasisedText'>{boldPartFirst}</text>
 						{restPartFirst}
-						<b>-</b>
-						<b>{boldPartSecond}</b>
-						{restPartSecond}{' '}
+						<text className="endOfWord">-</text>
+						<text className='emphasisedText'>{boldPartSecond}</text>
+						<text className='endOfWord'>{restPartSecond}</text>{' '}
 					</React.Fragment>
 				);
 			} else {
@@ -47,9 +47,11 @@ function HighlightedText() {
 
 				return (
 					<React.Fragment key={index}>
-						<b className='emphasisedText'>{boldPart}</b>
-						{restPart}
-						{hyphen}
+						<text className='emphasisedText'>{boldPart}</text>
+						<text className="endOfWord">
+							{restPart}
+							{hyphen}
+						</text>
 					</React.Fragment>
 				);
 			}
@@ -76,7 +78,7 @@ function HighlightedText() {
 
 	const boldedText = boldFirstLetters(text);
 
-	return <div>{boldedText}</div>;
+	return <div className='textOutput'>{boldedText}</div>;
 }
 
 export default HighlightedText;

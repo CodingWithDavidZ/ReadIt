@@ -5,26 +5,24 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+
+
+.textOutput {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1;
+  font-size: 18px;
+  width: 50rem
+
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.emphasisedText {
+  color: red;
+  font-weight: bold;
+}
+
+.endOfWord {
+  color: rgb(0, 255, 13);
+  font-weight: normal;
 }
 
 @media (prefers-reduced-motion: no-preference) {
